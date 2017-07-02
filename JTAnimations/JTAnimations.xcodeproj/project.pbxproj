@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6CFBFEBF1F07E208004F5EEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEBE1F07E208004F5EEF /* main.m */; };
-		6CFBFEC21F07E208004F5EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEC11F07E208004F5EEF /* AppDelegate.m */; };
-		6CFBFEC51F07E208004F5EEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEC41F07E208004F5EEF /* ViewController.m */; };
-		6CFBFEC81F07E208004F5EEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBFEC61F07E208004F5EEF /* Main.storyboard */; };
 		6CFBFECA1F07E208004F5EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBFEC91F07E208004F5EEF /* Assets.xcassets */; };
-		6CFBFECD1F07E208004F5EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBFECB1F07E208004F5EEF /* LaunchScreen.storyboard */; };
 		6CFBFED81F07E208004F5EEF /* JTAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFED71F07E208004F5EEF /* JTAnimationsTests.m */; };
 		6CFBFEE31F07E208004F5EEF /* JTAnimationsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEE21F07E208004F5EEF /* JTAnimationsUITests.m */; };
+		6CFBFEF61F07E923004F5EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEF41F07E923004F5EEF /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFEF71F07E923004F5EEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEF51F07E923004F5EEF /* main.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFEFB1F07E96D004F5EEF /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFEFE1F07EAE0004F5EEF /* JTHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEFD1F07EAE0004F5EEF /* JTHomeController.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF001F07EDD8004F5EEF /* JTConst.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF091F0886D2004F5EEF /* JTAppServiceTool.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +37,7 @@
 
 /* Begin PBXFileReference section */
 		6CFBFEBA1F07E208004F5EEF /* JTAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CFBFEBE1F07E208004F5EEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6CFBFEC01F07E208004F5EEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6CFBFEC11F07E208004F5EEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6CFBFEC31F07E208004F5EEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6CFBFEC41F07E208004F5EEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6CFBFEC71F07E208004F5EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CFBFEC91F07E208004F5EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6CFBFECC1F07E208004F5EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CFBFECE1F07E208004F5EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CFBFED31F07E208004F5EEF /* JTAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBFED71F07E208004F5EEF /* JTAnimationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAnimationsTests.m; sourceTree = "<group>"; };
@@ -51,6 +45,17 @@
 		6CFBFEDE1F07E208004F5EEF /* JTAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBFEE21F07E208004F5EEF /* JTAnimationsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAnimationsUITests.m; sourceTree = "<group>"; };
 		6CFBFEE41F07E208004F5EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFBFEF31F07E923004F5EEF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CFBFEF41F07E923004F5EEF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CFBFEF51F07E923004F5EEF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CFBFEF91F07E96D004F5EEF /* JTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTNavigationController.h; sourceTree = "<group>"; };
+		6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTNavigationController.m; sourceTree = "<group>"; };
+		6CFBFEFC1F07EAE0004F5EEF /* JTHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHomeController.h; sourceTree = "<group>"; };
+		6CFBFEFD1F07EAE0004F5EEF /* JTHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHomeController.m; sourceTree = "<group>"; };
+		6CFBFEFF1F07EDD8004F5EEF /* JTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTConst.h; sourceTree = "<group>"; };
+		6CFBFF001F07EDD8004F5EEF /* JTConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTConst.m; sourceTree = "<group>"; };
+		6CFBFF081F0886D2004F5EEF /* JTAppServiceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAppServiceTool.h; sourceTree = "<group>"; };
+		6CFBFF091F0886D2004F5EEF /* JTAppServiceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTAppServiceTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +106,8 @@
 		6CFBFEBC1F07E208004F5EEF /* JTAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				6CFBFEC01F07E208004F5EEF /* AppDelegate.h */,
-				6CFBFEC11F07E208004F5EEF /* AppDelegate.m */,
-				6CFBFEC31F07E208004F5EEF /* ViewController.h */,
-				6CFBFEC41F07E208004F5EEF /* ViewController.m */,
-				6CFBFEC61F07E208004F5EEF /* Main.storyboard */,
+				6CFBFEF01F07E923004F5EEF /* Classes */,
 				6CFBFEC91F07E208004F5EEF /* Assets.xcassets */,
-				6CFBFECB1F07E208004F5EEF /* LaunchScreen.storyboard */,
 				6CFBFECE1F07E208004F5EEF /* Info.plist */,
 				6CFBFEBD1F07E208004F5EEF /* Supporting Files */,
 			);
@@ -117,7 +117,6 @@
 		6CFBFEBD1F07E208004F5EEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CFBFEBE1F07E208004F5EEF /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +137,56 @@
 				6CFBFEE41F07E208004F5EEF /* Info.plist */,
 			);
 			path = JTAnimationsUITests;
+			sourceTree = "<group>";
+		};
+		6CFBFEF01F07E923004F5EEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFEF11F07E923004F5EEF /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6CFBFEF11F07E923004F5EEF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF071F0886A6004F5EEF /* Tool */,
+				6CFBFEF81F07E942004F5EEF /* Controller */,
+				6CFBFEF21F07E923004F5EEF /* Other */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6CFBFEF21F07E923004F5EEF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFEF31F07E923004F5EEF /* AppDelegate.h */,
+				6CFBFEF41F07E923004F5EEF /* AppDelegate.m */,
+				6CFBFEF51F07E923004F5EEF /* main.m */,
+				6CFBFEFF1F07EDD8004F5EEF /* JTConst.h */,
+				6CFBFF001F07EDD8004F5EEF /* JTConst.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6CFBFEF81F07E942004F5EEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFEF91F07E96D004F5EEF /* JTNavigationController.h */,
+				6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */,
+				6CFBFEFC1F07EAE0004F5EEF /* JTHomeController.h */,
+				6CFBFEFD1F07EAE0004F5EEF /* JTHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6CFBFF071F0886A6004F5EEF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF081F0886D2004F5EEF /* JTAppServiceTool.h */,
+				6CFBFF091F0886D2004F5EEF /* JTAppServiceTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +251,7 @@
 		6CFBFEB21F07E208004F5EEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JT;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BJT;
 				TargetAttributes = {
@@ -243,9 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CFBFECD1F07E208004F5EEF /* LaunchScreen.storyboard in Resources */,
 				6CFBFECA1F07E208004F5EEF /* Assets.xcassets in Resources */,
-				6CFBFEC81F07E208004F5EEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CFBFEC51F07E208004F5EEF /* ViewController.m in Sources */,
-				6CFBFEC21F07E208004F5EEF /* AppDelegate.m in Sources */,
-				6CFBFEBF1F07E208004F5EEF /* main.m in Sources */,
+				6CFBFEFE1F07EAE0004F5EEF /* JTHomeController.m in Sources */,
+				6CFBFEF71F07E923004F5EEF /* main.m in Sources */,
+				6CFBFEFB1F07E96D004F5EEF /* JTNavigationController.m in Sources */,
+				6CFBFEF61F07E923004F5EEF /* AppDelegate.m in Sources */,
+				6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */,
+				6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,25 +357,6 @@
 			targetProxy = 6CFBFEDF1F07E208004F5EEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6CFBFEC61F07E208004F5EEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CFBFEC71F07E208004F5EEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6CFBFECB1F07E208004F5EEF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CFBFECC1F07E208004F5EEF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6CFBFEE51F07E208004F5EEF /* Debug */ = {
@@ -411,7 +443,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = JTAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BJT.JTAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = JTAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BJT.JTAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
