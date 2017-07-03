@@ -13,9 +13,16 @@
 		6CFBFEF61F07E923004F5EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEF41F07E923004F5EEF /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFEF71F07E923004F5EEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEF51F07E923004F5EEF /* main.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFEFB1F07E96D004F5EEF /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */; settings = {ASSET_TAGS = (); }; };
-		6CFBFEFE1F07EAE0004F5EEF /* JTHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEFD1F07EAE0004F5EEF /* JTHomeController.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF001F07EDD8004F5EEF /* JTConst.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF091F0886D2004F5EEF /* JTAppServiceTool.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF121F08BCF4004F5EEF /* JTHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF111F08BCF4004F5EEF /* JTHomeController.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF151F08BD0E004F5EEF /* JTHomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF141F08BD0E004F5EEF /* JTHomeItem.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF241F08CB42004F5EEF /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF231F08CB42004F5EEF /* UIBarButtonItem+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF281F08EC97004F5EEF /* JTSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF271F08EC97004F5EEF /* JTSnowViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF301F09D9FB004F5EEF /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF2D1F09D9FB004F5EEF /* FBShimmeringLayer.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF311F09D9FB004F5EEF /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF2F1F09D9FB004F5EEF /* FBShimmeringView.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF341F09DEE0004F5EEF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF331F09DEE0004F5EEF /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF3B1F0A3402004F5EEF /* JTShimmerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF3A1F0A3402004F5EEF /* JTShimmerViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +57,27 @@
 		6CFBFEF51F07E923004F5EEF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFBFEF91F07E96D004F5EEF /* JTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTNavigationController.h; sourceTree = "<group>"; };
 		6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTNavigationController.m; sourceTree = "<group>"; };
-		6CFBFEFC1F07EAE0004F5EEF /* JTHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHomeController.h; sourceTree = "<group>"; };
-		6CFBFEFD1F07EAE0004F5EEF /* JTHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHomeController.m; sourceTree = "<group>"; };
 		6CFBFEFF1F07EDD8004F5EEF /* JTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTConst.h; sourceTree = "<group>"; };
 		6CFBFF001F07EDD8004F5EEF /* JTConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTConst.m; sourceTree = "<group>"; };
 		6CFBFF081F0886D2004F5EEF /* JTAppServiceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAppServiceTool.h; sourceTree = "<group>"; };
 		6CFBFF091F0886D2004F5EEF /* JTAppServiceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTAppServiceTool.m; sourceTree = "<group>"; };
+		6CFBFF101F08BCF4004F5EEF /* JTHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHomeController.h; sourceTree = "<group>"; };
+		6CFBFF111F08BCF4004F5EEF /* JTHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHomeController.m; sourceTree = "<group>"; };
+		6CFBFF131F08BD0E004F5EEF /* JTHomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHomeItem.h; sourceTree = "<group>"; };
+		6CFBFF141F08BD0E004F5EEF /* JTHomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHomeItem.m; sourceTree = "<group>"; };
+		6CFBFF221F08CB42004F5EEF /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		6CFBFF231F08CB42004F5EEF /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		6CFBFF261F08EC97004F5EEF /* JTSnowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSnowViewController.h; sourceTree = "<group>"; };
+		6CFBFF271F08EC97004F5EEF /* JTSnowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSnowViewController.m; sourceTree = "<group>"; };
+		6CFBFF2B1F09D9FB004F5EEF /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		6CFBFF2C1F09D9FB004F5EEF /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		6CFBFF2D1F09D9FB004F5EEF /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		6CFBFF2E1F09D9FB004F5EEF /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		6CFBFF2F1F09D9FB004F5EEF /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		6CFBFF321F09DEE0004F5EEF /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		6CFBFF331F09DEE0004F5EEF /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		6CFBFF391F0A3402004F5EEF /* JTShimmerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTShimmerViewController.h; sourceTree = "<group>"; };
+		6CFBFF3A1F0A3402004F5EEF /* JTShimmerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTShimmerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +164,8 @@
 		6CFBFEF01F07E923004F5EEF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6CFBFF161F08C045004F5EEF /* AnimationControllers */,
+				6CFBFF0B1F08BCB4004F5EEF /* Home */,
 				6CFBFEF11F07E923004F5EEF /* Main */,
 			);
 			path = Classes;
@@ -150,6 +174,8 @@
 		6CFBFEF11F07E923004F5EEF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6CFBFF291F09D9D6004F5EEF /* Lib */,
+				6CFBFF211F08CB38004F5EEF /* Category */,
 				6CFBFF071F0886A6004F5EEF /* Tool */,
 				6CFBFEF81F07E942004F5EEF /* Controller */,
 				6CFBFEF21F07E923004F5EEF /* Other */,
@@ -174,8 +200,6 @@
 			children = (
 				6CFBFEF91F07E96D004F5EEF /* JTNavigationController.h */,
 				6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */,
-				6CFBFEFC1F07EAE0004F5EEF /* JTHomeController.h */,
-				6CFBFEFD1F07EAE0004F5EEF /* JTHomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +211,99 @@
 				6CFBFF091F0886D2004F5EEF /* JTAppServiceTool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		6CFBFF0B1F08BCB4004F5EEF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF0F1F08BCF4004F5EEF /* Controller */,
+				6CFBFF0D1F08BCB4004F5EEF /* Model */,
+				6CFBFF0E1F08BCB4004F5EEF /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6CFBFF0D1F08BCB4004F5EEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF131F08BD0E004F5EEF /* JTHomeItem.h */,
+				6CFBFF141F08BD0E004F5EEF /* JTHomeItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CFBFF0E1F08BCB4004F5EEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6CFBFF0F1F08BCF4004F5EEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF101F08BCF4004F5EEF /* JTHomeController.h */,
+				6CFBFF111F08BCF4004F5EEF /* JTHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6CFBFF161F08C045004F5EEF /* AnimationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF381F0A3402004F5EEF /* Shimmer */,
+				6CFBFF251F08EC85004F5EEF /* Snow */,
+			);
+			path = AnimationControllers;
+			sourceTree = "<group>";
+		};
+		6CFBFF211F08CB38004F5EEF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF321F09DEE0004F5EEF /* UIView+Frame.h */,
+				6CFBFF331F09DEE0004F5EEF /* UIView+Frame.m */,
+				6CFBFF221F08CB42004F5EEF /* UIBarButtonItem+Extension.h */,
+				6CFBFF231F08CB42004F5EEF /* UIBarButtonItem+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6CFBFF251F08EC85004F5EEF /* Snow */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF261F08EC97004F5EEF /* JTSnowViewController.h */,
+				6CFBFF271F08EC97004F5EEF /* JTSnowViewController.m */,
+			);
+			path = Snow;
+			sourceTree = "<group>";
+		};
+		6CFBFF291F09D9D6004F5EEF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF2A1F09D9FB004F5EEF /* FBShimmering */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		6CFBFF2A1F09D9FB004F5EEF /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF2B1F09D9FB004F5EEF /* FBShimmering.h */,
+				6CFBFF2C1F09D9FB004F5EEF /* FBShimmeringLayer.h */,
+				6CFBFF2D1F09D9FB004F5EEF /* FBShimmeringLayer.m */,
+				6CFBFF2E1F09D9FB004F5EEF /* FBShimmeringView.h */,
+				6CFBFF2F1F09D9FB004F5EEF /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		6CFBFF381F0A3402004F5EEF /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF391F0A3402004F5EEF /* JTShimmerViewController.h */,
+				6CFBFF3A1F0A3402004F5EEF /* JTShimmerViewController.m */,
+			);
+			path = Shimmer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,12 +435,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CFBFEFE1F07EAE0004F5EEF /* JTHomeController.m in Sources */,
+				6CFBFF341F09DEE0004F5EEF /* UIView+Frame.m in Sources */,
 				6CFBFEF71F07E923004F5EEF /* main.m in Sources */,
+				6CFBFF3B1F0A3402004F5EEF /* JTShimmerViewController.m in Sources */,
+				6CFBFF311F09D9FB004F5EEF /* FBShimmeringView.m in Sources */,
 				6CFBFEFB1F07E96D004F5EEF /* JTNavigationController.m in Sources */,
+				6CFBFF301F09D9FB004F5EEF /* FBShimmeringLayer.m in Sources */,
+				6CFBFF281F08EC97004F5EEF /* JTSnowViewController.m in Sources */,
+				6CFBFF121F08BCF4004F5EEF /* JTHomeController.m in Sources */,
 				6CFBFEF61F07E923004F5EEF /* AppDelegate.m in Sources */,
 				6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */,
 				6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */,
+				6CFBFF241F08CB42004F5EEF /* UIBarButtonItem+Extension.m in Sources */,
+				6CFBFF151F08BD0E004F5EEF /* JTHomeItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

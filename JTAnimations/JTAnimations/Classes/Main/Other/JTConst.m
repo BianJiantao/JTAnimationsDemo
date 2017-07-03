@@ -8,3 +8,4 @@
 
 #import "JTConst.h"
 
+NSString *const LaunchAnimationDidEndNotification = @"LaunchAnimationDidEndNotification";
