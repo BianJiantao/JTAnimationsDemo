@@ -15,10 +15,12 @@
 #import "JTConst.h"
 #import "JTHomeItem.h"
 
-@interface JTHomeController ()
+@interface JTHomeController () <UITableViewDelegate,UITableViewDataSource>
 /** 数据 */
 @property (nonatomic,strong) NSMutableArray *items;
+/** 是否加载数据 */
 @property (nonatomic,assign) BOOL loadData;
+@property (nonatomic,weak) UITableView *tableView;
 @end
 
 @implementation JTHomeController
@@ -38,20 +40,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     
-    self.tableView.rowHeight      = 50.f;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
-    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    self.navView.alpha = 0;
     
     [self setupTitle];
     [self configData];
+    [self setuoTableView];
     
     // 监听启动动画结束, 加载 tableView 数据
     [JTNotificationCenter addObserver:self selector:@selector(setupAni) name:LaunchAnimationDidEndNotification object:nil];
-    
 }
 
+
+
+-(void)setuoTableView
+{
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.contentView.bounds style:UITableViewStylePlain];
+    tableView.delegate       = self;
+    tableView.dataSource     = self;
+    tableView.rowHeight      = 50.f;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.backgroundColor = [UIColor clearColor];
+    [self.contentView addSubview:tableView];
+    self.tableView = tableView;
+    
+}
 
 -(void)setupAni
 {
@@ -71,13 +85,13 @@
     FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] init];
     [self.view addSubview:shimmeringView];
     shimmeringView.width = kScreenSzie.width;
-    shimmeringView.height = 44;
+    shimmeringView.height = 64;
     shimmeringView.x = 0;
-    shimmeringView.y = -shimmeringView.height-10;
+    shimmeringView.y = 0;
     
     shimmeringView.shimmering                  = YES;
     shimmeringView.shimmeringBeginFadeDuration = 0.3;
-    shimmeringView.shimmeringOpacity           = 0.2;
+    shimmeringView.shimmeringOpacity           = 0.4;
     shimmeringView.shimmeringAnimationOpacity  = 1.f;
     
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:shimmeringView.bounds];
@@ -169,10 +183,10 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
--(BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
+//-(BOOL)prefersStatusBarHidden
+//{
+//    return YES;
+//}
 
 
 @end

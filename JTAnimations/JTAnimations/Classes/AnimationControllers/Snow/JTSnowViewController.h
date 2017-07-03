@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BJT. All rights reserved.
 //  粒子动画--雪花
 
-#import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface JTSnowViewController : UIViewController
+@interface JTSnowViewController : JTBaseViewController
 
 @end

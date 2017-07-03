@@ -9,3 +9,5 @@
 #import "JTConst.h"
 
 NSString *const LaunchAnimationDidEndNotification = @"LaunchAnimationDidEndNotification";
+
+NSInteger navViewTag = 999;

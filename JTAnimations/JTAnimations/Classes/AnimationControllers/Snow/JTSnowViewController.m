@@ -6,13 +6,15 @@
 //  Copyright © 2017年 BJT. All rights reserved.
 //
 
+#import "UIView+Frame.h"
+
 #import "JTSnowViewController.h"
 #import "JTConst.h"
+#import "JTNavigationController.h"
 
 @interface JTSnowViewController ()
 
 @property (nonatomic, strong) CALayer   *movedMask;
-@property (nonatomic,weak) UIView *contentView;
 
 @end
 
@@ -22,20 +24,16 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    UIView *contentView = [[UIView alloc] init];
-    contentView.frame = CGRectMake(0, 0, kScreenSzie.width, kScreenSzie.height);
-    [self.view addSubview:contentView];
-    self.contentView = contentView;
-    
     self.view.backgroundColor = [UIColor blackColor];
-    self.navigationController.navigationBar.subviews[0].alpha = 0.4;
+//    self.navView.backgroundColor = [UIColor greenColor];
+    
+    [self.navView setTitle:self.title WithColor:nil];
     
     // 创建粒子Layer
     CAEmitterLayer *snowEmitter = [CAEmitterLayer layer];
     
     // 粒子发射位置
-    snowEmitter.emitterPosition = CGPointMake(120,0);
+    snowEmitter.emitterPosition = CGPointMake(kScreenSzie.width*0.5,64);
     
     // 发射源的尺寸大小
     snowEmitter.emitterSize     = self.contentView.bounds.size;
@@ -68,7 +66,7 @@
     // 周围发射角度
     snowflake.emissionRange = 0.5 * M_PI;
     
-    // 子旋转角度范围
+    // 粒子旋转角度范围
     snowflake.spinRange = 0.25 * M_PI;
     snowflake.contents  = (id)[[UIImage imageNamed:@"snow"] CGImage];
     
@@ -99,12 +97,13 @@
     _movedMask          = [CALayer layer];
     _movedMask.frame    = (CGRect){CGPointZero, image.size};
     _movedMask.contents = (__bridge id)(image.CGImage);
-    _movedMask.position = self.contentView.center;
+    _movedMask.position = CGPointMake(self.view.centerX, self.view.height*0.4);
+    
     snowEmitter.mask    = _movedMask;
     
     // 拖拽的View
     UIView *dragView = [[UIView alloc] initWithFrame:(CGRect){CGPointZero, image.size}];
-    dragView.center  = self.contentView.center;
+    dragView.center  = _movedMask.position;
     [self.contentView addSubview:dragView];
     
     // 给dragView添加拖拽手势

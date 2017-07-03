@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BJT. All rights reserved.
 // facebook 辉光动画
 
-#import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface JTShimmerViewController : UIViewController
+@interface JTShimmerViewController : JTBaseViewController
 
 @end

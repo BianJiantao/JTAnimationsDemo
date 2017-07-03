@@ -8,6 +8,7 @@
 
 #import "FBShimmeringLayer.h"
 #import "FBShimmeringView.h"
+#import "UIView+Frame.h"
 
 #import "UIBarButtonItem+Extension.h"
 #import "JTShimmerViewController.h"
@@ -22,15 +23,18 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor blackColor];
-    self.navigationController.navigationBar.subviews[0].alpha = 0.4;
+    
+    [self.navView setTitle:self.title WithColor:nil];
    
     
     {
-        FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
+        FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.contentView.bounds];
         shimmeringView.shimmering = YES;
         shimmeringView.shimmeringBeginFadeDuration = 0.3;
         shimmeringView.shimmeringOpacity = 0.3;
-        [self.view addSubview:shimmeringView];
+        [self.contentView addSubview:shimmeringView];
+        shimmeringView.y -= 50;
+        
         
         UILabel *logoLabel = [[UILabel alloc] initWithFrame:shimmeringView.bounds];
         logoLabel.text = @"Shimmer";
@@ -42,30 +46,33 @@
     }
     
     {
-        CGFloat lineWidth = 1;
-        CGFloat radius = 130;
+        CGFloat lineWidth = 2; // 贝塞尔曲线宽度
+        CGFloat radius = 130;  // 半径
         FBShimmeringLayer *shimmeringLayer = [FBShimmeringLayer layer];
-        shimmeringLayer.frame  = (CGRect){CGPointZero, CGSizeMake((radius + lineWidth) * 2, (radius + lineWidth) * 2)};
-        shimmeringLayer.position = self.view.center;
+        shimmeringLayer.frame  = (CGRect){{0,0}, CGSizeMake((radius + lineWidth) * 2, (radius + lineWidth) * 2)};
+        
+//        shimmeringLayer.position = [self.contentView.superview convertPoint:self.contentView.center toView:self.contentView];
+        shimmeringLayer.position = CGPointMake(self.contentView.centerX, self.contentView.height*0.5-50);
         shimmeringLayer.shimmering = YES;
         shimmeringLayer.shimmeringBeginFadeDuration = 0.3;
         shimmeringLayer.shimmeringOpacity = 0.3;
-        shimmeringLayer.shimmeringPauseDuration = 0.6f;
-        [self.view.layer addSublayer:shimmeringLayer];
+        shimmeringLayer.shimmeringPauseDuration = 0.2f;
+        [self.contentView.layer addSublayer:shimmeringLayer];
         
         CAShapeLayer *circleShape = [CAShapeLayer layer];
         
         circleShape.lineWidth   = lineWidth;
-        circleShape.strokeColor =  [UIColor redColor].CGColor ;
+        circleShape.strokeColor =  [UIColor greenColor].CGColor ;
         circleShape.fillColor   =  [UIColor clearColor].CGColor;
         
-        circleShape.bounds   = CGRectMake(0, 0, (lineWidth + radius) * 2, (lineWidth + radius) * 2);
-        circleShape.position = CGPointZero;
-        UIBezierPath *path  = [UIBezierPath bezierPathWithArcCenter:CGPointMake(lineWidth + radius, lineWidth + 130)
-                                                             radius:radius + lineWidth / 2.0
-                                                         startAngle:0
-                                                           endAngle:M_PI * 2
-                                                          clockwise:NO];
+        circleShape.frame = shimmeringLayer.bounds;
+        
+        UIBezierPath *path  = [UIBezierPath bezierPathWithArcCenter:
+                               CGPointMake(lineWidth + radius, lineWidth + radius)
+                                radius:radius + lineWidth / 2.0
+                                startAngle:0
+                                endAngle:M_PI * 2
+                                clockwise:NO];
         circleShape.path = path.CGPath;
         
         shimmeringLayer.contentLayer = circleShape;

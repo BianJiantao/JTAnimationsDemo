@@ -23,6 +23,8 @@
 		6CFBFF311F09D9FB004F5EEF /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF2F1F09D9FB004F5EEF /* FBShimmeringView.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFF341F09DEE0004F5EEF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF331F09DEE0004F5EEF /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFF3B1F0A3402004F5EEF /* JTShimmerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF3A1F0A3402004F5EEF /* JTShimmerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF3E1F0A5903004F5EEF /* JTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF3D1F0A5903004F5EEF /* JTBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6CFBFF451F0A6798004F5EEF /* JTNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFF441F0A6798004F5EEF /* JTNavView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		6CFBFF331F09DEE0004F5EEF /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		6CFBFF391F0A3402004F5EEF /* JTShimmerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTShimmerViewController.h; sourceTree = "<group>"; };
 		6CFBFF3A1F0A3402004F5EEF /* JTShimmerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTShimmerViewController.m; sourceTree = "<group>"; };
+		6CFBFF3C1F0A5903004F5EEF /* JTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTBaseViewController.h; sourceTree = "<group>"; };
+		6CFBFF3D1F0A5903004F5EEF /* JTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTBaseViewController.m; sourceTree = "<group>"; };
+		6CFBFF431F0A6798004F5EEF /* JTNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTNavView.h; sourceTree = "<group>"; };
+		6CFBFF441F0A6798004F5EEF /* JTNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTNavView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,7 @@
 		6CFBFEF11F07E923004F5EEF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6CFBFF421F0A6782004F5EEF /* View */,
 				6CFBFF291F09D9D6004F5EEF /* Lib */,
 				6CFBFF211F08CB38004F5EEF /* Category */,
 				6CFBFF071F0886A6004F5EEF /* Tool */,
@@ -200,6 +207,8 @@
 			children = (
 				6CFBFEF91F07E96D004F5EEF /* JTNavigationController.h */,
 				6CFBFEFA1F07E96D004F5EEF /* JTNavigationController.m */,
+				6CFBFF3C1F0A5903004F5EEF /* JTBaseViewController.h */,
+				6CFBFF3D1F0A5903004F5EEF /* JTBaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,6 +313,15 @@
 				6CFBFF3A1F0A3402004F5EEF /* JTShimmerViewController.m */,
 			);
 			path = Shimmer;
+			sourceTree = "<group>";
+		};
+		6CFBFF421F0A6782004F5EEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBFF431F0A6798004F5EEF /* JTNavView.h */,
+				6CFBFF441F0A6798004F5EEF /* JTNavView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +464,9 @@
 				6CFBFEF61F07E923004F5EEF /* AppDelegate.m in Sources */,
 				6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */,
 				6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */,
+				6CFBFF3E1F0A5903004F5EEF /* JTBaseViewController.m in Sources */,
 				6CFBFF241F08CB42004F5EEF /* UIBarButtonItem+Extension.m in Sources */,
+				6CFBFF451F0A6798004F5EEF /* JTNavView.m in Sources */,
 				6CFBFF151F08BD0E004F5EEF /* JTHomeItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

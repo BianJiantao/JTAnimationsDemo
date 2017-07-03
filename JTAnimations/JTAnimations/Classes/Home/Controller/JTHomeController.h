@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BJT. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JTBaseViewController.h"
 
-@interface JTHomeController : UITableViewController
+@interface JTHomeController : JTBaseViewController
 
 @end

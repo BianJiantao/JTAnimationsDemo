@@ -20,19 +20,18 @@
 
 @implementation JTNavigationController
 
+-(instancetype)initWithRootViewController:(UIViewController *)rootViewController
+{
+    self = [super initWithRootViewController:rootViewController];
+    if (self) {
+        self.navigationBarHidden = YES;
+    }
+    return self;
+}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationBar.subviews[0].alpha = 0;
-    
-//    UINavigationBar *bar = [UINavigationBar appearance];
-//    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:
-//                                      [[UIColor blackColor] colorWithAlphaComponent:0.4] }];
-    
-    
-    
     
     // 启动动画
     UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:(CGRect){CGPointZero,kScreenSzie}];
@@ -54,32 +53,27 @@
 }
 
 
--(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    NSInteger count =self.viewControllers.count;
-    if (count) {
-        
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:@"backIcon" highlightedImage:@"backIcon_highlighted"];
-        
-        self.navigationBar.subviews[0].alpha = 1;
-    }
-    
-    [super pushViewController:viewController animated:animated];
-    
-}
+//-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//    NSInteger count =self.viewControllers.count;
+//    if (count) {
+//        
+////        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:@"backIcon" highlightedImage:@"backIcon_highlighted"];
+//        
+////        self.navigationBar.subviews[0].alpha = 1;
+//    }
+//    
+//    [super pushViewController:viewController animated:animated];
+//    
+//}
 
 
--(void)back
-{
-    self.navigationBar.subviews[0].alpha = 0;
-    [self popViewControllerAnimated:YES];
-}
 
--(UIViewController *)popViewControllerAnimated:(BOOL)animated
-{
-    
-    return [super popViewControllerAnimated:animated];
-}
+//-(UIViewController *)popViewControllerAnimated:(BOOL)animated
+//{
+//    
+//    return [super popViewControllerAnimated:animated];
+//}
 
 
 @end

@@ -18,3 +18,5 @@
 
 /** 启动动画结束的通知 */
 extern NSString *const LaunchAnimationDidEndNotification;
+
+extern NSInteger navViewTag;
