@@ -24,8 +24,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
-//    self.navView.backgroundColor = [UIColor greenColor];
+    self.backGroundView.backgroundColor = [UIColor blackColor];
     
     [self.navView setTitle:self.title WithColor:nil];
     
@@ -98,7 +97,6 @@
     _movedMask.frame    = (CGRect){CGPointZero, image.size};
     _movedMask.contents = (__bridge id)(image.CGImage);
     _movedMask.position = CGPointMake(self.view.centerX, self.view.height*0.4);
-    
     snowEmitter.mask    = _movedMask;
     
     // 拖拽的View

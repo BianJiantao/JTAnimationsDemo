@@ -9,6 +9,7 @@
 #import "FBShimmeringView.h"
 #import "UIView+Frame.h"
 
+#import "JTPopNumberViewController.h"
 #import "JTShimmerViewController.h"
 #import "JTSnowViewController.h"
 #import "JTHomeController.h"
@@ -40,8 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
-    
+    self.backGroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     self.navView.alpha = 0;
     
     [self setupTitle];
@@ -82,17 +82,13 @@
 
 -(void)setupTitle
 {
-    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] init];
+    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.navView.bounds];
     [self.view addSubview:shimmeringView];
-    shimmeringView.width = kScreenSzie.width;
-    shimmeringView.height = 64;
-    shimmeringView.x = 0;
-    shimmeringView.y = 0;
     
     shimmeringView.shimmering                  = YES;
     shimmeringView.shimmeringBeginFadeDuration = 0.3;
     shimmeringView.shimmeringOpacity           = 0.4;
-    shimmeringView.shimmeringAnimationOpacity  = 1.f;
+    shimmeringView.shimmeringAnimationOpacity  = 1.0;
     
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:shimmeringView.bounds];
     
@@ -113,7 +109,8 @@
 {
     
     NSArray *array = @[[JTHomeItem itemWithTitle:@"粒子动画-雪花" vcClass:[JTSnowViewController class]],
-                       [JTHomeItem itemWithTitle:@"辉光动画" vcClass:[JTShimmerViewController class]]
+                       [JTHomeItem itemWithTitle:@"Facebook辉光动画" vcClass:[JTShimmerViewController class]],
+                       [JTHomeItem itemWithTitle:@"Pop数值动画" vcClass:[JTPopNumberViewController class]]
                        ];
     NSInteger count = array.count;
     for (int i = 0; i < count; i++) {
@@ -183,10 +180,5 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
-//-(BOOL)prefersStatusBarHidden
-//{
-//    return YES;
-//}
-
 
 @end

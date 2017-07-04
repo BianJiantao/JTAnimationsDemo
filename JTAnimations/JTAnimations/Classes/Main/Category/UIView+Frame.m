@@ -100,4 +100,19 @@
     return self.frame.origin;
 }
 
+- (CGFloat)middleX {
+    
+    return CGRectGetWidth(self.bounds) / 2.f;
+}
+
+- (CGFloat)middleY {
+    
+    return CGRectGetHeight(self.bounds) / 2.f;
+}
+
+- (CGPoint)middlePoint {
+    
+    return CGPointMake(CGRectGetWidth(self.bounds) / 2.f, CGRectGetHeight(self.bounds) / 2.f);
+}
+
 @end

@@ -31,6 +31,7 @@
 //    homeController.view.hidden = YES;
     [self.window makeKeyAndVisible];
     
+    
     // 启动动画
 //    UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:self.window.bounds];
 //    iconImageView.image        = [JTAppServiceTool launchImage];

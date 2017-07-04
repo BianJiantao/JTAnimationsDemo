@@ -22,16 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blackColor];
+    self.backGroundView.backgroundColor = [UIColor blackColor];
     
-    [self.navView setTitle:self.title WithColor:nil];
-   
+    [self setupTitle];
     
     {
         FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.contentView.bounds];
         shimmeringView.shimmering = YES;
         shimmeringView.shimmeringBeginFadeDuration = 0.3;
-        shimmeringView.shimmeringOpacity = 0.3;
+        shimmeringView.shimmeringOpacity = 0.5;
+        shimmeringView.shimmeringAnimationOpacity  = 1.0;
         [self.contentView addSubview:shimmeringView];
         shimmeringView.y -= 50;
         
@@ -55,8 +55,9 @@
         shimmeringLayer.position = CGPointMake(self.contentView.centerX, self.contentView.height*0.5-50);
         shimmeringLayer.shimmering = YES;
         shimmeringLayer.shimmeringBeginFadeDuration = 0.3;
-        shimmeringLayer.shimmeringOpacity = 0.3;
-        shimmeringLayer.shimmeringPauseDuration = 0.2f;
+        shimmeringLayer.shimmeringOpacity = 0.4;
+        shimmeringLayer.shimmeringPauseDuration = 0.4;
+        shimmeringLayer.shimmeringAnimationOpacity  = 0.8;
         [self.contentView.layer addSublayer:shimmeringLayer];
         
         CAShapeLayer *circleShape = [CAShapeLayer layer];
@@ -78,10 +79,31 @@
         shimmeringLayer.contentLayer = circleShape;
     }
 
-    
-    
 }
 
+-(void)setupTitle
+{
+    UILabel *titleLabel = [[UILabel alloc] init];
+    
+    titleLabel.text = self.title;
+    titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:20];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.textColor = [UIColor cyanColor];
+    [titleLabel sizeToFit];
+    titleLabel.center = self.navView.middlePoint;
+    
+    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.navView.bounds];
+    
+    shimmeringView.shimmering                  = YES;
+    shimmeringView.shimmeringBeginFadeDuration = 0.3;
+    shimmeringView.shimmeringOpacity           = 0.5;
+    shimmeringView.shimmeringAnimationOpacity  = 1.0;
+    
+//    [self.navView addSubview:shimmeringView];
+    [self.navView insertSubviewBelowBackBtn:shimmeringView];
+    
+    shimmeringView.contentView = titleLabel;
+}
 
 
 @end

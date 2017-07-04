@@ -15,5 +15,9 @@
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
 
+@property (nonatomic, readonly) CGFloat middleX;
+@property (nonatomic, readonly) CGFloat middleY;
+@property (nonatomic, readonly) CGPoint middlePoint;
+
 
 @end

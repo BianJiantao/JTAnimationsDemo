@@ -22,24 +22,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupNavView];
+    [self setupViews];
+    
+    self.view.backgroundColor = [UIColor whiteColor]; // 避免 push 时出现黑色背景
 }
 
--(void)setupNavView
+-(void)setupViews
 {
-    JTNavView *navView = [JTNavView navViewWithTarget:self Action:@selector(back)];
+    UIView *backGroundView = [[UIView alloc] init];
+    [self.view addSubview:backGroundView];
+    backGroundView.frame = CGRectMake(0, 0, kScreenSzie.width, kScreenSzie.height);
+    self.backGroundView = backGroundView;
+    backGroundView.backgroundColor = [UIColor whiteColor];
     
+    JTNavView *navView = [JTNavView navViewWithTarget:self Action:@selector(back)];
     [self.view addSubview:navView];
     self.navView = navView;
+    navView.backgroundColor = [UIColor clearColor];
     
     UIView *contentView = [[UIView alloc] init];
-    
     [self.view addSubview:contentView];
     contentView.x = 0;
     contentView.y = navView.height;
     contentView.width = kScreenSzie.width;
     contentView.height = kScreenSzie.height - navView.height;
     self.contentView = contentView;
+    contentView.backgroundColor = [UIColor clearColor];
     
 }
 

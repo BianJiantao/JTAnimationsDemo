@@ -33,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     // 启动动画
     UIImageView *iconImageView = [[UIImageView alloc] initWithFrame:(CGRect){CGPointZero,kScreenSzie}];
     iconImageView.image        = [JTAppServiceTool launchImage];
@@ -55,15 +56,6 @@
 
 //-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 //{
-//    NSInteger count =self.viewControllers.count;
-//    if (count) {
-//        
-////        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:@"backIcon" highlightedImage:@"backIcon_highlighted"];
-//        
-////        self.navigationBar.subviews[0].alpha = 1;
-//    }
-//    
-//    [super pushViewController:viewController animated:animated];
 //    
 //}
 
@@ -71,7 +63,6 @@
 
 //-(UIViewController *)popViewControllerAnimated:(BOOL)animated
 //{
-//    
 //    return [super popViewControllerAnimated:animated];
 //}
 

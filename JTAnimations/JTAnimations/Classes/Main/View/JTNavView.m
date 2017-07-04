@@ -12,7 +12,6 @@
 
 @interface JTNavView ()
 
-@property (nonatomic,weak) UIView *backGroundView;
 @property (nonatomic,weak) UIButton *backBtn;
 @property (nonatomic,weak) UILabel *titleLabel;
 
@@ -27,10 +26,6 @@
         
         self.frame = CGRectMake(0, 0, kScreenSzie.width, 64);
         
-        UIView *backGroundView = [[UIView alloc] init];
-        self.backGroundView = backGroundView;
-        backGroundView.alpha = 0;
-        
         UIButton *btn = [[UIButton alloc] init];
         [btn setImage:[UIImage imageNamed:@"backIconVer2"] forState:UIControlStateNormal];
         [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
@@ -44,7 +39,6 @@
         
         [self addSubview:titleLabel];
         [self addSubview:btn];
-        [self addSubview:backGroundView];
         self.userInteractionEnabled = YES;
     }
     return self;
@@ -59,8 +53,6 @@
     self.backBtn.x = 10;
     self.backBtn.y = (self.height - self.backBtn.height) * 0.5;
     
-    self.backGroundView.frame = self.bounds;
-    
     self.titleLabel.centerX = self.centerX;
     self.titleLabel.centerY = self.centerY;
     self.titleLabel.height = self.backBtn.height;
@@ -69,17 +61,15 @@
     
 }
 
+
+-(void)insertSubviewBelowBackBtn:(UIView *)view
+{
+    [self insertSubview:view belowSubview:self.backBtn];
+}
+
 +(instancetype)navViewWithTarget:(id)target Action:(SEL)action
 {
     return [[self alloc] initWithTarget:target action:action];
-}
-
--(void)setBackGroundAlpha:(CGFloat)backGroundAlpha
-{
-    _backGroundAlpha = backGroundAlpha;
-    
-    self.backGroundView.alpha = backGroundAlpha;
-    
 }
 
 -(void)setBackBtnImage:(NSString *)normalImage highImage:(NSString *)highImage
