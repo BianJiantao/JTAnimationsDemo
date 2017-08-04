@@ -1,2 +1,14 @@
 # JTAnimationsDemo
-some animations demo
+## 一些好玩的动画收集, <持续更新中> 
+### 0. 启动动画 gif
+![]()
+### 1. 粒子动画-雪花 gif
+![]()
+### 2. Facebook辉光动画 gif
+![]()
+### 3. Pop数值动画 gif
+![]()
+### 4. 密码强度指示动画 gif
+![]()
+### 5. 衰减弹力动画 gif
+![]()

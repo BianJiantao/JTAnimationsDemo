@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.backGroundView.backgroundColor = [UIColor blackColor];
+    self.backGroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     [self.navView setTitle:self.title WithColor:nil];
     

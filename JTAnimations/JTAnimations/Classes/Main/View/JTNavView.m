@@ -53,10 +53,10 @@
     self.backBtn.x = 10;
     self.backBtn.y = (self.height - self.backBtn.height) * 0.5;
     
+//    self.titleLabel.height = self.backBtn.height;
+//    self.titleLabel.width = 250;
     self.titleLabel.centerX = self.centerX;
     self.titleLabel.centerY = self.centerY;
-    self.titleLabel.height = self.backBtn.height;
-    self.titleLabel.width = 250;
     
     
 }
@@ -87,6 +87,7 @@
     if (titleColor) {
         self.titleLabel.textColor = titleColor;
     }
+    [self.titleLabel sizeToFit];
 }
 
 

@@ -9,6 +9,8 @@
 #import "FBShimmeringView.h"
 #import "UIView+Frame.h"
 
+#import "JTDecayViewController.h"
+#import "JTPwdStrengthIndicatorViewController.h"
 #import "JTPopNumberViewController.h"
 #import "JTShimmerViewController.h"
 #import "JTSnowViewController.h"
@@ -110,7 +112,9 @@
     
     NSArray *array = @[[JTHomeItem itemWithTitle:@"粒子动画-雪花" vcClass:[JTSnowViewController class]],
                        [JTHomeItem itemWithTitle:@"Facebook辉光动画" vcClass:[JTShimmerViewController class]],
-                       [JTHomeItem itemWithTitle:@"Pop数值动画" vcClass:[JTPopNumberViewController class]]
+                       [JTHomeItem itemWithTitle:@"Pop数值动画" vcClass:[JTPopNumberViewController class]],
+                       [JTHomeItem itemWithTitle:@"密码强度指示动画" vcClass:[JTPwdStrengthIndicatorViewController class]],
+                       [JTHomeItem itemWithTitle:@"衰减弹力动画" vcClass:[JTDecayViewController class]]
                        ];
     NSInteger count = array.count;
     for (int i = 0; i < count; i++) {

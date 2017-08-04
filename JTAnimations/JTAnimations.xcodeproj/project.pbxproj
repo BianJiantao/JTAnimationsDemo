@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CE6EED01F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6CE6EED31F348B23006065D7 /* JTPwdStrengthIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EED21F348B23006065D7 /* JTPwdStrengthIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
+		6CE6EED71F34975B006065D7 /* JTDecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EED61F34975B006065D7 /* JTDecayViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6CFBFECA1F07E208004F5EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBFEC91F07E208004F5EEF /* Assets.xcassets */; };
 		6CFBFED81F07E208004F5EEF /* JTAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFED71F07E208004F5EEF /* JTAnimationsTests.m */; };
 		6CFBFEE31F07E208004F5EEF /* JTAnimationsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBFEE21F07E208004F5EEF /* JTAnimationsUITests.m */; };
@@ -65,6 +68,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CE6EECE1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPwdStrengthIndicatorViewController.h; sourceTree = "<group>"; };
+		6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPwdStrengthIndicatorViewController.m; sourceTree = "<group>"; };
+		6CE6EED11F348B23006065D7 /* JTPwdStrengthIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPwdStrengthIndicatorView.h; sourceTree = "<group>"; };
+		6CE6EED21F348B23006065D7 /* JTPwdStrengthIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPwdStrengthIndicatorView.m; sourceTree = "<group>"; };
+		6CE6EED51F34975B006065D7 /* JTDecayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDecayViewController.h; sourceTree = "<group>"; };
+		6CE6EED61F34975B006065D7 /* JTDecayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDecayViewController.m; sourceTree = "<group>"; };
 		6CFBFEBA1F07E208004F5EEF /* JTAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBFEC91F07E208004F5EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CFBFECE1F07E208004F5EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,6 +194,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CE6EECD1F34876C006065D7 /* PwdStrengthIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6CE6EECE1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.h */,
+				6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */,
+				6CE6EED11F348B23006065D7 /* JTPwdStrengthIndicatorView.h */,
+				6CE6EED21F348B23006065D7 /* JTPwdStrengthIndicatorView.m */,
+			);
+			path = PwdStrengthIndicator;
+			sourceTree = "<group>";
+		};
+		6CE6EED41F34971C006065D7 /* Decay */ = {
+			isa = PBXGroup;
+			children = (
+				6CE6EED51F34975B006065D7 /* JTDecayViewController.h */,
+				6CE6EED61F34975B006065D7 /* JTDecayViewController.m */,
+			);
+			path = Decay;
+			sourceTree = "<group>";
+		};
 		6CFBFEB11F07E208004F5EEF = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +364,8 @@
 		6CFBFF161F08C045004F5EEF /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6CE6EED41F34971C006065D7 /* Decay */,
+				6CE6EECD1F34876C006065D7 /* PwdStrengthIndicator */,
 				6CFBFF921F0BED5E004F5EEF /* PopNumber */,
 				6CFBFF381F0A3402004F5EEF /* Shimmer */,
 				6CFBFF251F08EC85004F5EEF /* Snow */,
@@ -617,6 +648,7 @@
 				6CFBFF801F0B6C18004F5EEF /* POPAnimationEvent.mm in Sources */,
 				6CFBFF841F0B6C18004F5EEF /* POPAnimator.mm in Sources */,
 				6CFBFF301F09D9FB004F5EEF /* FBShimmeringLayer.m in Sources */,
+				6CE6EED71F34975B006065D7 /* JTDecayViewController.m in Sources */,
 				6CFBFF7F1F0B6C18004F5EEF /* POPAnimation.mm in Sources */,
 				6CFBFF861F0B6C18004F5EEF /* POPCGUtils.mm in Sources */,
 				6CFBFF281F08EC97004F5EEF /* JTSnowViewController.m in Sources */,
@@ -629,8 +661,10 @@
 				6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */,
 				6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */,
 				6CFBFF891F0B6C18004F5EEF /* POPGeometry.mm in Sources */,
+				6CE6EED31F348B23006065D7 /* JTPwdStrengthIndicatorView.m in Sources */,
 				6CFBFF831F0B6C18004F5EEF /* POPAnimationTracer.mm in Sources */,
 				6CFBFF821F0B6C18004F5EEF /* POPAnimationRuntime.mm in Sources */,
+				6CE6EED01F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m in Sources */,
 				6CFBFF3E1F0A5903004F5EEF /* JTBaseViewController.m in Sources */,
 				6CFBFF881F0B6C18004F5EEF /* POPDecayAnimation.mm in Sources */,
 				6CFBFF241F08CB42004F5EEF /* UIBarButtonItem+Extension.m in Sources */,
@@ -848,6 +882,7 @@
 				6CFBFEE91F07E208004F5EEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFBFEEA1F07E208004F5EEF /* Build configuration list for PBXNativeTarget "JTAnimationsTests" */ = {
 			isa = XCConfigurationList;
@@ -856,6 +891,7 @@
 				6CFBFEEC1F07E208004F5EEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFBFEED1F07E208004F5EEF /* Build configuration list for PBXNativeTarget "JTAnimationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -864,6 +900,7 @@
 				6CFBFEEF1F07E208004F5EEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

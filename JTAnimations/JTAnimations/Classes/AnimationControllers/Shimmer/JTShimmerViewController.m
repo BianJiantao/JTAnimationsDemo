@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.backGroundView.backgroundColor = [UIColor blackColor];
+    self.backGroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     [self setupTitle];
     
@@ -44,7 +44,7 @@
         logoLabel.backgroundColor = [UIColor clearColor];
         shimmeringView.contentView = logoLabel;
     }
-    
+
     {
         CGFloat lineWidth = 2; // 贝塞尔曲线宽度
         CGFloat radius = 130;  // 半径
