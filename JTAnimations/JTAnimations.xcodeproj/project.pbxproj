@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C3D22C01F544591007418FB /* JTMusicFrequencyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D22BF1F544591007418FB /* JTMusicFrequencyController.m */; settings = {ASSET_TAGS = (); }; };
 		6CE6EED01F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6CE6EED31F348B23006065D7 /* JTPwdStrengthIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EED21F348B23006065D7 /* JTPwdStrengthIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
 		6CE6EED71F34975B006065D7 /* JTDecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EED61F34975B006065D7 /* JTDecayViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -68,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C3D22BE1F544591007418FB /* JTMusicFrequencyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMusicFrequencyController.h; sourceTree = "<group>"; };
+		6C3D22BF1F544591007418FB /* JTMusicFrequencyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMusicFrequencyController.m; sourceTree = "<group>"; };
 		6CE6EECE1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPwdStrengthIndicatorViewController.h; sourceTree = "<group>"; };
 		6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPwdStrengthIndicatorViewController.m; sourceTree = "<group>"; };
 		6CE6EED11F348B23006065D7 /* JTPwdStrengthIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPwdStrengthIndicatorView.h; sourceTree = "<group>"; };
@@ -194,6 +197,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C3D22BD1F54457A007418FB /* MusicFrequency */ = {
+			isa = PBXGroup;
+			children = (
+				6C3D22BE1F544591007418FB /* JTMusicFrequencyController.h */,
+				6C3D22BF1F544591007418FB /* JTMusicFrequencyController.m */,
+			);
+			path = MusicFrequency;
+			sourceTree = "<group>";
+		};
 		6CE6EECD1F34876C006065D7 /* PwdStrengthIndicator */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +376,7 @@
 		6CFBFF161F08C045004F5EEF /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6C3D22BD1F54457A007418FB /* MusicFrequency */,
 				6CE6EED41F34971C006065D7 /* Decay */,
 				6CE6EECD1F34876C006065D7 /* PwdStrengthIndicator */,
 				6CFBFF921F0BED5E004F5EEF /* PopNumber */,
@@ -663,6 +676,7 @@
 				6CFBFF891F0B6C18004F5EEF /* POPGeometry.mm in Sources */,
 				6CE6EED31F348B23006065D7 /* JTPwdStrengthIndicatorView.m in Sources */,
 				6CFBFF831F0B6C18004F5EEF /* POPAnimationTracer.mm in Sources */,
+				6C3D22C01F544591007418FB /* JTMusicFrequencyController.m in Sources */,
 				6CFBFF821F0B6C18004F5EEF /* POPAnimationRuntime.mm in Sources */,
 				6CE6EED01F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m in Sources */,
 				6CFBFF3E1F0A5903004F5EEF /* JTBaseViewController.m in Sources */,

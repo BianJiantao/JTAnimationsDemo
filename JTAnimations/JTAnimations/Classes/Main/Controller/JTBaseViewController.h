@@ -15,6 +15,6 @@
 /** 内容 view */
 @property (nonatomic,strong) UIView *contentView;
 /**背景 view */
-@property (nonatomic,strong) UIView *backGroundView; 
+//@property (nonatomic,strong) UIView *backGroundView; 
 
 @end

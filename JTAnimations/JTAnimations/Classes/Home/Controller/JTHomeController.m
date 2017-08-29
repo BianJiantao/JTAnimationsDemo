@@ -9,6 +9,7 @@
 #import "FBShimmeringView.h"
 #import "UIView+Frame.h"
 
+#import "JTMusicFrequencyController.h"
 #import "JTDecayViewController.h"
 #import "JTPwdStrengthIndicatorViewController.h"
 #import "JTPopNumberViewController.h"
@@ -43,12 +44,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.backGroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     self.navView.alpha = 0;
     
     [self setupTitle];
     [self configData];
-    [self setuoTableView];
+    [self setupTableView];
     
     // 监听启动动画结束, 加载 tableView 数据
     [JTNotificationCenter addObserver:self selector:@selector(setupAni) name:LaunchAnimationDidEndNotification object:nil];
@@ -56,7 +57,7 @@
 
 
 
--(void)setuoTableView
+-(void)setupTableView
 {
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.contentView.bounds style:UITableViewStylePlain];
     tableView.delegate       = self;
@@ -110,11 +111,14 @@
 -(void)configData
 {
     
-    NSArray *array = @[[JTHomeItem itemWithTitle:@"粒子动画-雪花" vcClass:[JTSnowViewController class]],
+    NSArray *array = @[
+                       [JTHomeItem itemWithTitle:@"粒子动画-雪花" vcClass:[JTSnowViewController class]],
                        [JTHomeItem itemWithTitle:@"Facebook辉光动画" vcClass:[JTShimmerViewController class]],
                        [JTHomeItem itemWithTitle:@"Pop数值动画" vcClass:[JTPopNumberViewController class]],
                        [JTHomeItem itemWithTitle:@"密码强度指示动画" vcClass:[JTPwdStrengthIndicatorViewController class]],
-                       [JTHomeItem itemWithTitle:@"衰减弹力动画" vcClass:[JTDecayViewController class]]
+                       [JTHomeItem itemWithTitle:@"衰减弹力动画" vcClass:[JTDecayViewController class]],
+                       [JTHomeItem itemWithTitle:@"音乐频谱动画" vcClass:[JTMusicFrequencyController class]]
+                       
                        ];
     NSInteger count = array.count;
     for (int i = 0; i < count; i++) {

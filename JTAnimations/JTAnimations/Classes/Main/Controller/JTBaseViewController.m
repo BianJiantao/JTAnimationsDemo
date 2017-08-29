@@ -29,11 +29,11 @@
 
 -(void)setupViews
 {
-    UIView *backGroundView = [[UIView alloc] init];
-    [self.view addSubview:backGroundView];
-    backGroundView.frame = CGRectMake(0, 0, kScreenSzie.width, kScreenSzie.height);
-    self.backGroundView = backGroundView;
-    backGroundView.backgroundColor = [UIColor whiteColor];
+//    UIView *backGroundView = [[UIView alloc] init];
+//    [self.view addSubview:backGroundView];
+//    backGroundView.frame = CGRectMake(0, 0, kScreenSzie.width, kScreenSzie.height);
+//    self.backGroundView = backGroundView;
+//    backGroundView.backgroundColor = [UIColor whiteColor];
     
     JTNavView *navView = [JTNavView navViewWithTarget:self Action:@selector(back)];
     [self.view addSubview:navView];

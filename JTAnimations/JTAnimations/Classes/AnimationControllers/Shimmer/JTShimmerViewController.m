@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.backGroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     [self setupTitle];
     

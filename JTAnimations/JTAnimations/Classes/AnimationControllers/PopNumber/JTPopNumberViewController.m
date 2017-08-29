@@ -34,7 +34,7 @@ static NSInteger const colorCoefficient = 255 / 100;
     
     [self.navView setTitle:self.title WithColor:nil];
     
-    self.backGroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     // Init label.
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
