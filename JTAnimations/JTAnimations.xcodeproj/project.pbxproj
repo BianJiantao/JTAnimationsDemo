@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C3D22C01F544591007418FB /* JTMusicFrequencyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D22BF1F544591007418FB /* JTMusicFrequencyController.m */; settings = {ASSET_TAGS = (); }; };
+		6C3D22C41F56E00F007418FB /* JTLabelScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D22C31F56E00F007418FB /* JTLabelScaleViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6C3D22C71F56E179007418FB /* JTScaleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D22C61F56E179007418FB /* JTScaleLabel.m */; settings = {ASSET_TAGS = (); }; };
 		6CE6EED01F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6CE6EED31F348B23006065D7 /* JTPwdStrengthIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EED21F348B23006065D7 /* JTPwdStrengthIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
 		6CE6EED71F34975B006065D7 /* JTDecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6EED61F34975B006065D7 /* JTDecayViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -71,6 +73,10 @@
 /* Begin PBXFileReference section */
 		6C3D22BE1F544591007418FB /* JTMusicFrequencyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMusicFrequencyController.h; sourceTree = "<group>"; };
 		6C3D22BF1F544591007418FB /* JTMusicFrequencyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMusicFrequencyController.m; sourceTree = "<group>"; };
+		6C3D22C21F56E00F007418FB /* JTLabelScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLabelScaleViewController.h; sourceTree = "<group>"; };
+		6C3D22C31F56E00F007418FB /* JTLabelScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTLabelScaleViewController.m; sourceTree = "<group>"; };
+		6C3D22C51F56E179007418FB /* JTScaleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTScaleLabel.h; sourceTree = "<group>"; };
+		6C3D22C61F56E179007418FB /* JTScaleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTScaleLabel.m; sourceTree = "<group>"; };
 		6CE6EECE1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPwdStrengthIndicatorViewController.h; sourceTree = "<group>"; };
 		6CE6EECF1F3487F6006065D7 /* JTPwdStrengthIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPwdStrengthIndicatorViewController.m; sourceTree = "<group>"; };
 		6CE6EED11F348B23006065D7 /* JTPwdStrengthIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPwdStrengthIndicatorView.h; sourceTree = "<group>"; };
@@ -204,6 +210,17 @@
 				6C3D22BF1F544591007418FB /* JTMusicFrequencyController.m */,
 			);
 			path = MusicFrequency;
+			sourceTree = "<group>";
+		};
+		6C3D22C11F56DFEA007418FB /* LabelScale */ = {
+			isa = PBXGroup;
+			children = (
+				6C3D22C21F56E00F007418FB /* JTLabelScaleViewController.h */,
+				6C3D22C31F56E00F007418FB /* JTLabelScaleViewController.m */,
+				6C3D22C51F56E179007418FB /* JTScaleLabel.h */,
+				6C3D22C61F56E179007418FB /* JTScaleLabel.m */,
+			);
+			path = LabelScale;
 			sourceTree = "<group>";
 		};
 		6CE6EECD1F34876C006065D7 /* PwdStrengthIndicator */ = {
@@ -376,6 +393,7 @@
 		6CFBFF161F08C045004F5EEF /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6C3D22C11F56DFEA007418FB /* LabelScale */,
 				6C3D22BD1F54457A007418FB /* MusicFrequency */,
 				6CE6EED41F34971C006065D7 /* Decay */,
 				6CE6EECD1F34876C006065D7 /* PwdStrengthIndicator */,
@@ -663,6 +681,7 @@
 				6CFBFF301F09D9FB004F5EEF /* FBShimmeringLayer.m in Sources */,
 				6CE6EED71F34975B006065D7 /* JTDecayViewController.m in Sources */,
 				6CFBFF7F1F0B6C18004F5EEF /* POPAnimation.mm in Sources */,
+				6C3D22C41F56E00F007418FB /* JTLabelScaleViewController.m in Sources */,
 				6CFBFF861F0B6C18004F5EEF /* POPCGUtils.mm in Sources */,
 				6CFBFF281F08EC97004F5EEF /* JTSnowViewController.m in Sources */,
 				6CFBFF121F08BCF4004F5EEF /* JTHomeController.m in Sources */,
@@ -672,6 +691,7 @@
 				6CFBFF811F0B6C18004F5EEF /* POPAnimationExtras.mm in Sources */,
 				6CFBFF8C1F0B6C18004F5EEF /* POPPropertyAnimation.mm in Sources */,
 				6CFBFF011F07EDD8004F5EEF /* JTConst.m in Sources */,
+				6C3D22C71F56E179007418FB /* JTScaleLabel.m in Sources */,
 				6CFBFF0A1F0886D2004F5EEF /* JTAppServiceTool.m in Sources */,
 				6CFBFF891F0B6C18004F5EEF /* POPGeometry.mm in Sources */,
 				6CE6EED31F348B23006065D7 /* JTPwdStrengthIndicatorView.m in Sources */,

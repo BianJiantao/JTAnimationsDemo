@@ -9,6 +9,7 @@
 #import "FBShimmeringView.h"
 #import "UIView+Frame.h"
 
+#import "JTLabelScaleViewController.h"
 #import "JTMusicFrequencyController.h"
 #import "JTDecayViewController.h"
 #import "JTPwdStrengthIndicatorViewController.h"
@@ -117,7 +118,8 @@
                        [JTHomeItem itemWithTitle:@"Pop数值动画" vcClass:[JTPopNumberViewController class]],
                        [JTHomeItem itemWithTitle:@"密码强度指示动画" vcClass:[JTPwdStrengthIndicatorViewController class]],
                        [JTHomeItem itemWithTitle:@"衰减弹力动画" vcClass:[JTDecayViewController class]],
-                       [JTHomeItem itemWithTitle:@"音乐频谱动画" vcClass:[JTMusicFrequencyController class]]
+                       [JTHomeItem itemWithTitle:@"音乐频谱动画" vcClass:[JTMusicFrequencyController class]],
+                       [JTHomeItem itemWithTitle:@"UILabel缩放动画" vcClass:[JTLabelScaleViewController class]]
                        
                        ];
     NSInteger count = array.count;

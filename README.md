@@ -14,3 +14,5 @@
 ![](https://github.com/BianJiantao/JTAnimationsDemo/blob/master/Image/Decay.gif?raw=true)
 ### 6. 音乐频谱动画 gif
 ![](https://github.com/BianJiantao/JTAnimationsDemo/blob/master/Image/MusicFrequency.gif?raw=true)
+### 7. UILabel缩放动画 gif
+![](https://github.com/BianJiantao/JTAnimationsDemo/blob/master/Image/ScaleLabel.gif?raw=true)
