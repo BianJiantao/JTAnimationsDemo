@@ -45,7 +45,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+    // TIPS: 为防止 push 时控制器的 view 有颜色重叠, 不要设置颜色透明度
+    self.view.backgroundColor = kJTColorWithRGB(50, 50, 50);//[[UIColor blackColor] colorWithAlphaComponent:0.8];
     self.navView.alpha = 0;
     
     [self setupTitle];

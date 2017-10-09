@@ -6,6 +6,8 @@
 //  Copyright © 2017年 BJT. All rights reserved.
 //
 
+#import "JTConst.h"
+
 #import "JTPwdStrengthIndicatorViewController.h"
 #import "JTPwdStrengthIndicatorView.h"
 
@@ -28,7 +30,7 @@
     
     [self.navView setTitle:self.title WithColor:nil];
     
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.view.backgroundColor =  kJTColorWithRGB(25, 25, 25);//[[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     [self addPasswordTextField];
     [self addPasswordStrengthView];

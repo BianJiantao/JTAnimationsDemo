@@ -23,7 +23,7 @@
     
     [super viewDidLoad];
     
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.view.backgroundColor =  kJTColorWithRGB(25, 25, 25);//[[UIColor blackColor] colorWithAlphaComponent:0.9];
     [self.navView setTitle:self.title WithColor:nil];
     
     [self setupLabel];

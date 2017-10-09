@@ -34,7 +34,7 @@ static NSInteger const colorCoefficient = 255 / 100;
     
     [self.navView setTitle:self.title WithColor:nil];
     
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.view.backgroundColor =  kJTColorWithRGB(25, 25, 25);//[[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     // Init label.
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
@@ -110,6 +110,11 @@ static NSInteger const colorCoefficient = 255 / 100;
                         range:suffixStrRange];
     
     self.label.attributedText = richString;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.timer invalidate];
+    [super viewWillDisappear:animated];
 }
 
 

@@ -9,6 +9,7 @@
 #import "FBShimmeringLayer.h"
 #import "FBShimmeringView.h"
 #import "UIView+Frame.h"
+#import "JTConst.h"
 
 #import "UIBarButtonItem+Extension.h"
 #import "JTShimmerViewController.h"
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.view.backgroundColor =  kJTColorWithRGB(25, 25, 25);//[[UIColor blackColor] colorWithAlphaComponent:0.9];
     
     [self setupTitle];
     
